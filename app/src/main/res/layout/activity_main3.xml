@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7005B3E8"
+    tools:context=".MainActivity3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/newbackground">
+
+    <TextView
+        android:layout_width="700dp"
+        android:layout_height="40dp"
+        android:id="@+id/textView_signup_head"
+        android:layout_marginTop="30dp"
+        android:text="Please enter your details to Sign up"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_signup_full_name"
+            android:layout_below="@id/textView_signup_head"
+            android:text="Full Name*"
+            android:textColor="#555555"
+            android:padding="15dp"
+            android:textSize="16sp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_signup_full_name"
+            android:hint="    Enter your full name"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:layout_below="@id/textView_signup_full_name"
+            android:background="@drawable/border"
+            android:padding="8dp"
+             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_signup_email"
+            android:layout_below="@id/textView_signup_full_name"
+            android:text="Email*"
+            android:textColor="#555555"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:layout_marginTop="35dp"/>
+
+        <EditText
+            android:id="@+id/editText_signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_signup_email"
+            android:background="@drawable/border"
+            android:hint="    Enter your Email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_signup_dob"
+            android:layout_below="@id/textView_signup_email"
+            android:text="Date of birth*"
+            android:textColor="#555555"
+            android:padding="8dp"
+            android:layout_marginTop="35dp"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/editText_signup_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_signup_dob"
+            android:background="@drawable/border"
+            android:hint="    Enter your date of birth (dd/mm/yyyy)"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_signup_password"
+            android:layout_below="@id/textView_signup_dob"
+            android:text="Password*"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:padding="6dp"
+            android:layout_marginTop="50dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_signup_password"
+            android:hint="    Enter your Password"
+            android:inputType="date"
+            android:textSize="16sp"
+            android:layout_below="@id/textView_signup_password"
+            android:padding="8dp"
+            android:background="@drawable/border"
+            />
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_signup_confirm_password"
+            android:layout_below="@id/textView_signup_password"
+            android:text="Confirm password*"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:padding="6dp"
+            android:layout_marginTop="60dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_signup_confirm_password"
+            android:hint="    Confirm your Password"
+            android:inputType="date"
+            android:textSize="16sp"
+            android:layout_below="@id/textView_signup_confirm_password"
+            android:padding="6dp"
+            android:background="@drawable/border"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_Signup"
+            android:layout_below="@id/editText_signup_confirm_password"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="70dp"
+            android:text="Sign up" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="10dp"
+            android:visibility="gone"/>
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
+
+

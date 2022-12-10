@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newbackground"
+    tools:context=".MainActivity4">
+
+    <ImageView
+        android:id="@+id/firstpage_whiteframe2"
+        android:layout_width="309dp"
+        android:layout_height="385dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="47dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo2"
+        app:srcCompat="@drawable/whiteframeroundrec" />
+
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="304dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="-8dp"
+        android:layout_marginEnd="82dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logowithtitle" />
+
+    <Button
+        android:id="@+id/signupPage_signup_commend_button2"
+        android:layout_width="256dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="140dp"
+        android:backgroundTint="#03B4E8"
+        android:text="Log in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupPage_ConfirmPassword2" />
+
+    <EditText
+        android:id="@+id/signinPage_email2"
+        android:layout_width="256dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signupPage_ConfirmPassword2"
+        android:layout_width="256dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signinPage_email2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
